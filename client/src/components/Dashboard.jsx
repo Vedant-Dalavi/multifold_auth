@@ -39,7 +39,7 @@ const Dashboard = () => {
             setTokenStatus("🔁 Access token refreshed successfully.");
         } catch (err) {
             setTokenStatus("❌ Refresh token expired. Logging out.", err.message);
-            // logout();
+            logout();
         }
     };
 
